@@ -183,4 +183,10 @@ export const examples: Example[] = [
     info: ScreenNames.AI_KEYBOARD,
     icons: "🔮",
   },
+  {
+    title: "KeyboardAvoidingView Modal Stack",
+    testID: "keyboard_avoiding_view_modal_stack",
+    info: ScreenNames.KEYBOARD_AVOIDING_VIEW_MODAL_STACK,
+    icons: "🪟📐",
+  },
 ];

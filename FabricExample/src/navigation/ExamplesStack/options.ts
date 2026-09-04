@@ -101,4 +101,8 @@ export const options = {
     title: "AI Keyboard",
     headerShown: false,
   },
+  [ScreenNames.KEYBOARD_AVOIDING_VIEW_MODAL_STACK]: {
+    title: "KAV Modal Stack",
+    headerShown: false,
+  },
 };

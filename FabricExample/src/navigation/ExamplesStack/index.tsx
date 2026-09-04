@@ -16,6 +16,7 @@ import InteractiveKeyboardIOS from "../../screens/Examples/InteractiveKeyboardIO
 import KeyboardAnimation from "../../screens/Examples/KeyboardAnimation";
 import KeyboardAvoidingViewExample from "../../screens/Examples/KeyboardAvoidingView";
 import KeyboardAvoidingViewAutomaticExample from "../../screens/Examples/KeyboardAvoidingViewAutomatic";
+import KeyboardAvoidingViewModalStack from "../../screens/Examples/KeyboardAvoidingViewModalStack";
 import KeyboardChatScrollViewPlayground from "../../screens/Examples/KeyboardChatScrollView";
 import KeyboardEffectsExample from "../../screens/Examples/KeyboardEffects";
 import KeyboardExtender from "../../screens/Examples/KeyboardExtender";
@@ -66,6 +67,7 @@ export type ExamplesStackParamList = {
   [ScreenNames.AI_LEGEND_LIST_CHAT]: undefined;
   [ScreenNames.KEYBOARD_EFFECTS]: undefined;
   [ScreenNames.AI_KEYBOARD]: undefined;
+  [ScreenNames.KEYBOARD_AVOIDING_VIEW_MODAL_STACK]: undefined;
 };
 
 const Stack = createStackNavigator<ExamplesStackParamList>();
@@ -221,6 +223,11 @@ const ExamplesStack = () => (
       component={AIKeyboard}
       name={ScreenNames.AI_KEYBOARD}
       options={options[ScreenNames.AI_KEYBOARD]}
+    />
+    <Stack.Screen
+      component={KeyboardAvoidingViewModalStack}
+      name={ScreenNames.KEYBOARD_AVOIDING_VIEW_MODAL_STACK}
+      options={options[ScreenNames.KEYBOARD_AVOIDING_VIEW_MODAL_STACK]}
     />
   </Stack.Navigator>
 );
